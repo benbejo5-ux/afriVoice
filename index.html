@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="pt"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Africa Translate V4</title> 
+    <link rel="stylesheet" href="style.css"> 
+	<link rel="manifest" href="manifest.json"> 
+    <meta name="theme-color" content="#00c853"> 
+</head> 
+ 
+<body> 
+ 
+<div class="app"> 
+ 
+    <div class="header"> 
+        <h1>
+🌍
+ AfriVoice</h1> 
+        <p>Português → Línguas Africanas</p> 
+    </div> 
+ 
+    <div class="box"> 
+ 
+        <textarea id="texto" placeholder="Digite aqui..."></textarea> 
+ 
+        <select id="idioma"> 
+            <option value="umbundu">Umbundu</option> 
+            <option value="kimbundu">Kimbundu</option> 
+            <option value="kikongo">Kikongo</option> 
+            <option value="kwanyama">Kwanyama</option> 
+        </select> 
+ 
+        <button onclick="traduzir()">Traduzir</button> 
+ 
+    </div> 
+ 
+    <div class="resultado"> 
+ 
+        <h2>Tradução:</h2> 
+        <p id="resultado"></p> 
+ 
+        <button onclick="copiar()">Copiar</button> 
+ 
+    </div> 
+ 
+    <div class="historico"> 
+        <h3>Histórico</h3> 
+        <ul id="historico"></ul> 
+    </div> 
+ 
+</div> 
+ 
+<script src="script.js"></script> 
+ 
+</body> 
+</html>
